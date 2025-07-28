@@ -14,7 +14,7 @@ spec:
       labels:
         app: velero-backup-notification
     spec:
-      serviceAccountName: velero
+      serviceAccountName: {{ .Values.serviceAccountName | quote }}
       initContainers:
         - name: "fix-keepalive"
           image: busybox:1.28

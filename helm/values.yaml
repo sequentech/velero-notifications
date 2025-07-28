@@ -29,3 +29,5 @@ webhook:
 velero_namespace: velero
 
 notification_prefix: "[Velero] "
+
+serviceAccountName: velero
